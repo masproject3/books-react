@@ -4,22 +4,15 @@ import './App.css';
 
 class App extends Component {
   render() {
-    return (
+      const helloWord = 'Добро пожаловать в Путь к изучению React';
+      let user = {
+          name: 'Иван',
+          lastName: 'Иванов',
+      };
+      return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h2>{helloWord}</h2>
+        <div className="user_name">{user.lastName +' '+ user.name}</div>
       </div>
     );
   }
